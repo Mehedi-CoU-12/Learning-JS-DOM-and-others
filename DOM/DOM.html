@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form Event
+    </title>
+</head>
+<body >
+    <form id="form" action="" method="post">
+        <label for="">Name</label>
+        <input id="name" type="text"><br>
+
+        <label for="">email</label>
+        <input id="email" type="email" name="" id=""><br>
+
+        <button type="submit">submit</button>
+        <button type="reset">reset</button>
+
+    </form>
+    
+    <div>
+        <p>Hi, sumon</p>
+        <p style="display: none;" >hello ,sumon's gf</p>
+    </div>
+
+    <div id="box">Click me</div>
+
+
+    <ul id="id">
+        <li>Home</li>
+        <li>about</li>
+    </ul>
+
+
+    <form action="" id="login">
+        <input type="text">
+        <input type="submit" value="">
+    </form>
+
+
+    <button id="toggle" type="submit">Click Me!</button>
+    <div class="box"></div>
+
+    <strong>Mehedi</strong>
+
+    
+    <script >
+        const name=document.querySelector('strong');
+        const button=document.querySelector('#toggle')
+        const div=document.querySelector('.box');
+
+        name.innerText='Mehedi Hasan';
+        div.innerHTML='<h1>sumon</h1>';
+        button.addEventListener('click',()=>{
+            button.classList.toggle('red')
+        })
+    </script>
+</body>
+</html>

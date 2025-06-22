@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Closure and Scope</title>
+    </head>
+    <body>
+        <button id="green">Green</button>
+        <button id="orange">Orange</button>
+
+        <script>
+
+            function clickHandler(color) {
+                return function () {
+                    document.body.style.backgroundColor = `${color}`;
+                };
+            }
+            // function clickHandler(color) {
+            //         document.body.style.backgroundColor = `${color}`;
+            // }
+
+            document.getElementById('green').onclick=clickHandler('green');
+            document.getElementById('orange').onclick=()=>{
+                document.body.style.backgroundColor=`orange`;
+            }
+
+        </script>
+    </body>
+</html>

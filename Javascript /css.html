@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Document</title>
+
+        <style>
+            /* div {
+        display: flex;
+        justify-content: space-between;
+      }
+      p {
+        margin: 1px;
+      }
+      .box2 {
+        top: 60px;
+        left: 60px;
+        width: 200px;
+        height: 200px;
+        background-color: green;
+      } */
+        </style>
+    </head>
+    <body>
+        <div>
+            <p id="box2">box1</p>
+            <p class="box2">box2</p>
+            <p class="box2">box3</p>
+            <p class="box2">box4</p>
+            <p class="box2">box5</p>
+            <p class="box2">box6</p>
+            <p class="box2">box7</p>
+            <p class="box2">box8</p>
+            <p class="box2">box9</p>
+            <p class="box2">box10</p>
+            <p id="box">box11</p>
+            <p class="box2">box12</p>
+            <p class="box2">box12</p>
+        </div>
+        <!-- <div>i'm moved from my normal spot!</div>
+        <div style="position: relative; top: 10px; left: 20px">
+            I'm moved from my normal spot!
+        </div>
+        <div style="position: relative">
+            <div style="position: absolute; top: 0; left: 0">
+                I'm in the top-left corner of my parent!
+            </div>
+        </div>
+        <div style="position: fixed; top: 0; right: 0">
+            I'm always in the top-right corner of the screen!
+        </div> -->
+
+        <input type="button" onclick="Click()" value="Click Me!" />
+
+        <script>
+            function Click() {
+                const value = document.getElementById("box").innerText;
+                console.log(value);
+
+                if (value == "box11")
+                    document.getElementById("box").innerText = "mehedi hasan a";
+                else document.getElementById("box").innerText = "box11";
+            }
+        </script>
+    </body>
+</html>
