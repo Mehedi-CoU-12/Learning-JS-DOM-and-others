@@ -6,12 +6,12 @@ div1.addEventListener("dragstart", (e) => {
     let selectedBox = e.target;
     div1.style.opacity = 0.5;
 
-    console.log(selectedBox);
+    // console.log(selectedBox);
 
     //box-1
     div2.addEventListener("dragover", (e) => {
         e.preventDefault();
-        console.log(e);
+        // console.log(e);
     });
     div2.addEventListener("drop", (e) => {
         div2.innerText = "";
@@ -21,7 +21,7 @@ div1.addEventListener("dragstart", (e) => {
     //box-2
     div3.addEventListener("dragover", (e) => {
         e.preventDefault();
-        console.log(e.target);
+        // console.log(e.target);
     });
 
     div3.addEventListener("drop", (e) => {
