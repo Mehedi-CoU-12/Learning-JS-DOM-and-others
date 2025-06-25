@@ -41,10 +41,16 @@ body {
 .product {
     display: grid;
     grid-template-columns: repeat(8, 1fr);
-    gap: 5px;
+    gap: 1px;
 }
 
 .totalPrice{
     text-align: right;
     margin-right: 110px;
+}
+
+#promocode{
+    background-color: aqua;
+    font-weight: bolder;
+    cursor: pointer;
 }
