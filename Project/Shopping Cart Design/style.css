@@ -1,33 +1,63 @@
 body {
-    background-color: rgb(41, 12, 121);
+    background-color: rgb(4, 87, 36);
     color: white;
 }
 
-.allProduct{
-    display: flex;
-    margin: 30px;
-    justify-content: space-evenly;
+.allProduct {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    scroll-behavior: smooth;
 }
 
 #img {
     margin: 30px;
     border-radius: 20px;
+    height: 225px;
+    width: 200px;
 }
 
 #btn {
     margin: 20px;
 }
 
-.container {
-    background-color: rgb(85, 114, 5);
-    width: 300px;
+.container,
+.container1 {
+    background-color: rgb(6, 77, 77);
+    width: 250px;
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    margin: 3px;
+    margin: 5px;
     margin-bottom: 40px;
     border-radius: 20px;
+}
+
+.container1 {
+    background-color: rgb(6, 37, 77);
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    border-radius: 10px;
+}
+
+.container1 input,
+.container1 button {
+    width: 90%;
+    padding: 2px;
+    border: none;
+    border-radius: 5px;
+    font-size: 1rem;
+}
+
+.container1 button {
+    background-color: aqua;
+    color: black;
+    font-weight: bold;
+    cursor: pointer;
 }
 
 .cart {
@@ -44,13 +74,46 @@ body {
     gap: 1px;
 }
 
-.totalPrice{
+.totalPrice {
     text-align: right;
     margin-right: 110px;
 }
 
-#promocode{
+
+#promocode {
     background-color: aqua;
     font-weight: bolder;
     cursor: pointer;
+}
+
+.cart-row {
+    display: grid;
+    grid-template-columns: repeat(8, 1fr);
+    gap: 1px;
+    align-items: center;
+    justify-content: center;
+}
+
+.cart-row > img {
+    height: 40px;
+}
+
+.cart-row > button {
+    width: 60px;
+    height: 20px;
+    border: none;
+    border-radius: 10px;
+    font: bolder;
+    background-color: aqua;
+    cursor: pointer;
+}
+
+.success {
+    color: rgb(116, 218, 116);
+    font: bolder;
+}
+
+.failed {
+    color: rgb(233, 54, 54);
+    font: bolder;
 }

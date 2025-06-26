@@ -8,42 +8,51 @@
     </head>
     <body>
         <div class="allProduct">
+            <div class="container1">
+                <h1>Create Product</h1>
+                <input type="file" id="prodImage" accept="image/*" >
+                <input type="text" name="text" id="prodName" placeholder="product name" >
+                <input type="number" name="text" id="prodPrice" placeholder="proudct price">
+                <input type="number" name="text" id="prodQuantity" placeholder="product quantity">
+                <button type="submit" id="prodCreate" >Add Product</button>
+            </div>
             <div class="container">
                 <img id="img" src="mi11.jpeg" />
                 <p id="name">Mi 11 Lite NE 5G</p>
                 <p>
-                    <span>Price: <span id="price">30000</span></span>
+                    <span>Price: ৳<span id="price">30000</span></span>
                 </p>
                 <p>
                     <span>Quantity : <span id="quantity">10</span></span>
                 </p>
 
-                <button id="btn">ADD to Product</button>
+                <button id="btn">Add to cart</button>
             </div>
             <div class="container">
                 <img id="img" src="download.jpeg" />
                 <p id="name">iPhone 16 Pro Max</p>
                 <p>
-                    <span>Price: <span id="price">27000</span></span>
+                    <span>Price: ৳<span id="price">27000</span></span>
                 </p>
                 <p>
                     <span>Quantity : <span id="quantity">10</span></span>
                 </p>
 
-                <button id="btn">ADD to Product</button>
+                <button id="btn">Add to cart</button>
             </div>
             <div class="container">
                 <img id="img" src="download (1).jpeg" />
-                <p id="name">Pixel 8</p>
+                <p id="name">Google Pixel 8</p>
                 <p>
-                    <span>Price: <span id="price">24000</span></span>
+                    <span>Price: ৳<span id="price">24000</span></span>
                 </p>
                 <p>
                     <span>Quantity : <span id="quantity">10</span></span>
                 </p>
 
-                <button id="btn">ADD to Product</button>
+                <button id="btn">Add to cart</button>
             </div>
+
         </div>
 
         <div class="cart">
@@ -53,19 +62,27 @@
                 <span>Price</span>
                 <span>Quantity</span>
                 <span>Remove</span>
-                <span>+</span>
                 <span>-</span>
+                <span>+</span>
                 <span>Total</span>
             </div>
         </div>
 
         <div class="totalPrice">
-            <button id="promocode" >15% promocode</button>
-            <span>Sub Total : <span id="subtotal">0</span></span>
+            <p id="alert"></p>
+            <div>
+                <input
+                    type="text"
+                    id="promodcode-apply"
+                    placeholder="apply promocode here"
+                />
+                <button id="promocode">Apply</button>
+            </div>
+            <p>Sub Total : <span id="subtotal">0</span></p>
         </div>
 
-        <div class="totalPrice" >
-            <span>Total Price: <span id="total" >0</span></span>
+        <div class="totalPrice">
+            <span>Total Price: <span id="total">0</span></span>
         </div>
 
         <script src="script.js"></script>
