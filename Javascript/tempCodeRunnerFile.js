@@ -1,5 +1,11 @@
-function sumon(){
-    return 'name';
+const userId=Symbol('userID');
+
+let user={
+    name:'mehedi',
+    [userId]:1234
+
 }
 
-console.log(sumon())
+for(let key in user){
+    console.log(key," ")
+}

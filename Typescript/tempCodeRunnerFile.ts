@@ -1,11 +1,19 @@
-let json='{"name":"mehedi","age":24}';
+type Personss = {
+    name: string;
+    age: number;
+    isEmp: boolean;
+};
 
-type Userss={
-  name:string,
-  age:number,
-  city:string
+let personData: Personss = {
+    name: "mehedi",
+    age: 24,
+    isEmp: true,
+};
+
+type personX = keyof Personss;
+
+function printt(value:personX):void{
+    console.log(value);
 }
 
-const usersss=JSON.parse(json) ;
-
-console.log(usersss.city)
+printt('age')
